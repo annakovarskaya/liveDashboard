@@ -1,0 +1,20 @@
+{
+  "name": "live-dashboard",
+  "description": "This is a live dashboard.",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.3",
+    "ejs": "~0.8.4",
+    "express": "3.x.x",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jst": "^1.0.0",
+    "maxmind": "^2.4.0",
+    "sqlite3": "^3.1.13"
+  },
+  "devDependencies": {
+    "nodemon": "latest"
+  }
+}
