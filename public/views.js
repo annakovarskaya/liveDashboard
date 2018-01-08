@@ -18,8 +18,7 @@ var indexControlsView = Backbone.View.extend({
     }
 });
 var indexHead = Backbone.View.extend({
-    tagName: "h5",
-    className: "nav nav-pills",
+    tagName: "h2",
     template: JST.indexHead,
     initialize: function (options) {
         this.nav = options.nav;
@@ -31,8 +30,8 @@ var indexHead = Backbone.View.extend({
 });
 
 var attacksPerProtocolView = Backbone.View.extend({
-    tagName: "table",
-    className: "table",
+    tagName: "div",
+    className: "table-responsive",
     template: JST.attacks_per_protocol,
     initialize: function (options) {
         this.nav = options.nav;
@@ -67,29 +66,27 @@ var attackPerProtocolView = Backbone.View.extend({
     }
 });
 
-
-/*var attacksPerCountryControlsView = Backbone.View.extend({
+var attacksPerCountriesControlsView = Backbone.View.extend({
     tagName: "div",
     className: "nav nav-pills",
-    template: JST.indexControls,
+    template: JST.countriesControls,
     initialize: function (options) {
         this.nav = options.nav;
     },
     events: {
-        'click a[href="/countries"]': 'countries'
+        'click a[href="/"]': 'index'
     },
     render: function () {
         this.el.innerHTML = this.template();
         return this;
     },
-    countries: function (evt) {
+    index: function (evt) {
         evt.preventDefault();
-        this.nav("countries", { trigger: true });
+        this.nav("/", { trigger: true });
     }
-});*/
+});
 var attacksPerCountryHead = Backbone.View.extend({
-    tagName: "h5",
-    className: "nav nav-pills",
+    tagName: "h2",
     template: JST.attacksPerCountryHead,
     initialize: function (options) {
         this.nav = options.nav;

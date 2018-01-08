@@ -20,23 +20,23 @@ var AppRouter = Backbone.Router.extend({
             collection: this.attacks_per_protocol,
             nav: this.nav
         });
-        this.main.html(ih.render().el);
+        this.main.html(cv.render().el);
+        this.main.append(ih.render().el);
         this.main.append(av.render().el);
-        this.main.append(cv.render().el);
     },
     countries: function () {
         var ch = new attacksPerCountryHead({
                 nav: this.nav
             }),
-            /*ccv = new attacksPerCountryControlsView({
+            ccv = new attacksPerCountriesControlsView({
                 nav: this.nav
-            }),*/
+            }),
             acv = new attacksPerCountriesView({
                 collection: this.attacks_per_countries,
                 nav: this.nav
             });
-        this.main.html(ch.render().el);
+        this.main.html(ccv.render().el);
+        this.main.append(ch.render().el);
         this.main.append(acv.render().el);
- //       this.main.append(ccv.render().el);
-    }
+     }
 });
