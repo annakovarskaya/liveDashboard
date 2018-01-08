@@ -98,8 +98,8 @@ var attacksPerCountryHead = Backbone.View.extend({
 });
 
 var attacksPerCountriesView = Backbone.View.extend({
-    tagName: "table",
-    className: "table",
+    tagName: "div",
+    className: "table-responsive",
     template: JST.attacks_per_countries,
     initialize: function (options) {
         this.nav = options.nav;

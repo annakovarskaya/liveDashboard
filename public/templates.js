@@ -20,7 +20,7 @@ this["JST"]["attacks_per_countries"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<thead>\r\n<tr>\r\n    <th data-field="count">Count</th>\r\n    <th data-field="name">Country</th>\r\n\r\n</tr>\r\n</thead>\r\n<tbody></tbody>';
+__p += '<table class="table table-striped" data-pagination="true" data-search="true" data-toggle="table">\r\n<thead>\r\n<tr>\r\n    <th data-field="count">Count</th>\r\n    <th data-field="name">Country</th>\r\n\r\n</tr>\r\n</thead>\r\n<tbody></tbody>\r\n</table>';
 
 }
 return __p
