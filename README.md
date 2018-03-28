@@ -1,4 +1,4 @@
-# nettitudeLiveDashboard
+# liveDashboard
 Test task
 Live dashboard for Dioanea honeypot. 
 You need to run 'npm install' in the root of project. 
