@@ -1,5 +1,4 @@
 # liveDashboard
-Test task
 Live dashboard for Dioanea honeypot. 
 You need to run 'npm install' in the root of project. 
 You should add 'dionaea.sqlite' file to the root because there is no possibility to commit such big files to the gitHub.
